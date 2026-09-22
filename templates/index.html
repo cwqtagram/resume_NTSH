@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
@@ -69,6 +70,34 @@
             color: #555;
         }
 
+        /* QR Code 區域 */
+        .qrcode-section {
+            background-color: white;
+            margin-top: 40px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .qrcode-section h2 {
+            color: #1565c0;
+            margin-bottom: 15px;
+        }
+
+        .qrcode-section img {
+            width: 180px;
+            height: 180px;
+            object-fit: contain;
+            margin-top: 10px;
+        }
+
+        .qrcode-section p {
+            color: #555;
+            font-size: 14px;
+            margin-top: 15px;
+        }
+
         footer {
             text-align: center;
             padding: 20px;
@@ -124,6 +153,14 @@
         </div>
 
     </div>
+
+    <!-- QR Code -->
+    <div class="qrcode-section">
+        <h2>📱 我的學習歷程 QR Code</h2>
+        <img src="{{ url_for('static', filename='images/qr_code.jpg') }}" alt="學習歷程 QR Code">
+        <p>掃描 QR Code 查看我的學習歷程</p>
+    </div>
+
 </div>
 
 <footer>

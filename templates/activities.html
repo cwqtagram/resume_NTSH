@@ -1,453 +1,227 @@
 <!DOCTYPE html>
-
 <html lang="zh-TW">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>課外活動</title>
 
     <style>
-
         * {
-
             box-sizing: border-box;
-
         }
 
         body {
-
             margin: 0;
-
             font-family: "Microsoft JhengHei", Arial, sans-serif;
-
             background-color: #f5f7fa;
-
             color: #333;
-
         }
 
         header {
-
             background: linear-gradient(135deg, #4CAF50, #2E8B57);
-
             color: white;
-
             text-align: center;
-
             padding: 45px 20px;
-
         }
 
         header h1 {
-
             margin: 0 0 10px;
-
             font-size: 38px;
-
         }
 
         header p {
-
             margin: 0;
-
             font-size: 18px;
-
         }
 
         .container {
-
             max-width: 1100px;
-
             margin: 40px auto;
-
             padding: 0 20px;
-
         }
 
         .intro {
-
             background-color: white;
-
             padding: 30px;
-
             border-radius: 15px;
-
             text-align: center;
-
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-
             margin-bottom: 35px;
-
         }
 
         .intro h2 {
-
             color: #2E8B57;
-
             margin-top: 0;
-
         }
 
         .intro p {
-
             line-height: 1.8;
-
             font-size: 16px;
-
         }
 
         .activities {
-
             display: grid;
-
             grid-template-columns: repeat(2, 1fr);
-
             gap: 25px;
-
         }
 
         .activity-card {
-
             background-color: white;
-
             border-radius: 15px;
-
             overflow: hidden;
-
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-
             transition: transform 0.3s, box-shadow 0.3s;
-
         }
 
         .activity-card:hover {
-
             transform: translateY(-5px);
-
             box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
-
         }
 
         .activity-card img {
-
             width: 100%;
-
             height: 230px;
-
             object-fit: cover;
-
             display: block;
-
         }
 
         .activity-content {
-
             padding: 22px;
-
         }
 
         .activity-content h3 {
-
             margin-top: 0;
-
             color: #2E8B57;
-
             font-size: 23px;
-
         }
 
         .activity-content p {
-
             line-height: 1.7;
-
             color: #555;
-
-        }
-
-        /* Pikmin 卡片專用 */
-
-        .pikmin-card {
-
-            text-decoration: none;
-
-            color: inherit;
-
-            display: block;
-
-        }
-
-        .pikmin-image {
-
-            height: 230px;
-
-            background: linear-gradient(135deg, #dff5d8, #b8e6b0);
-
-            display: flex;
-
-            justify-content: center;
-
-            align-items: center;
-
-            font-size: 100px;
-
-        }
-
-        .pikmin-card h3 {
-
-            color: #2E8B57;
-
         }
 
         .button-area {
-
             text-align: center;
-
             margin-top: 40px;
-
         }
 
         .home-button {
-
             display: inline-block;
-
             background-color: #4CAF50;
-
             color: white;
-
             text-decoration: none;
-
             padding: 12px 30px;
-
             border-radius: 8px;
-
             transition: background-color 0.3s;
-
         }
 
         .home-button:hover {
-
             background-color: #2E8B57;
-
         }
 
         footer {
-
             margin-top: 50px;
-
             background-color: #333;
-
             color: white;
-
             text-align: center;
-
             padding: 20px;
-
         }
 
         @media (max-width: 700px) {
-
             header h1 {
-
                 font-size: 30px;
-
             }
 
             .activities {
-
                 grid-template-columns: 1fr;
-
             }
 
             .activity-card img {
-
                 height: 200px;
-
             }
-
         }
-
     </style>
-
 </head>
 
 <body>
 
     <header>
-
         <h1>課外活動</h1>
-
         <p>探索興趣、培養能力，創造屬於自己的學習經驗</p>
-
     </header>
 
     <main class="container">
 
         <section class="intro">
-
             <h2>我的課外活動</h2>
-
             <p>
-
                 課外活動是學習生活中重要的一部分。透過參與不同的社團、
-
                 競賽、志工服務以及營隊活動，我可以培養團隊合作、溝通表達、
-
                 解決問題與獨立思考的能力，也能發掘自己的興趣與專長。
-
             </p>
-
         </section>
 
         <section class="activities">
 
-            <!-- 原本的社團活動 -->
-
             <div class="activity-card">
-
                 <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1000&q=80"
-
                      alt="社團活動">
-
                 <div class="activity-content">
-
                     <h3>🎨 社團活動</h3>
-
                     <p>
-
                         積極參與學校社團，和同學一起完成各種活動。
-
                         在團隊合作的過程中學習溝通與分工，也培養自己的興趣與專長。
-
                     </p>
-
                 </div>
-
             </div>
 
-            <!-- 原本的競賽活動 -->
-
             <div class="activity-card">
-
                 <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1000&q=80"
-
                      alt="競賽活動">
-
                 <div class="activity-content">
-
                     <h3>🏆 競賽活動</h3>
-
                     <p>
-
                         參加校內外各項競賽，從準備資料、練習到正式比賽，
-
                         學習如何設定目標並持續努力，也從過程中累積寶貴經驗。
-
                     </p>
-
                 </div>
-
             </div>
 
-            <!-- 原本的志工服務 -->
-
             <div class="activity-card">
-
                 <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=1000&q=80"
-
                      alt="志工服務">
-
                 <div class="activity-content">
-
                     <h3>🤝 志工服務</h3>
-
                     <p>
-
                         透過志工服務關心身邊的人與社區，學習付出與合作。
-
                         在服務他人的同時，也更加了解自己的責任與能力。
-
                     </p>
-
                 </div>
-
             </div>
 
-            <!-- 原本的營隊活動 -->
-
             <div class="activity-card">
-
                 <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1000&q=80"
-
                      alt="營隊活動">
-
                 <div class="activity-content">
-
                     <h3>🔬 營隊與學習活動</h3>
-
                     <p>
-
                         參加不同主題的營隊與學習活動，接觸課堂以外的知識。
-
                         透過實際操作與團隊討論，拓展視野並探索未來可能發展的方向。
-
                     </p>
-
                 </div>
-
-            </div>
-
-            <!-- ⭐ 新增的 Pikmin -->
-
-            <div class="activity-card">
-
-                <a href="/Pikmin" class="pikmin-card">
-
-                    <div class="pikmin-image">
-
-                        🌱
-
-                    </div>
-
-                    <div class="activity-content">
-
-                        <h3>🎮 Pikmin</h3>
-
-                        <p>
-
-                            皮克敏是任天堂推出的策略與冒險類遊戲系列，
-
-                            玩家可以帶領不同種類的 Pikmin，
-
-                            利用牠們各自的特殊能力完成探索與挑戰。
-
-                        </p>
-
-                    </div>
-
-                </a>
-
             </div>
 
         </section>
 
         <div class="button-area">
-
             <a href="/" class="home-button">回首頁</a>
-
         </div>
 
     </main>
 
     <footer>
-
         <p>© 2026 我的學習歷程網站</p>
-
     </footer>
 
 </body>
-
 </html>

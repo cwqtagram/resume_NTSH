@@ -1,6 +1,7 @@
-```html
+
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -70,7 +71,6 @@
             color: #555;
         }
 
-        /* QR Code 區域 */
         .qrcode-section {
             background-color: white;
             margin-top: 40px;
@@ -115,6 +115,7 @@
 </header>
 
 <div class="container">
+
     <div class="card-grid">
 
         <div class="card">
@@ -136,23 +137,24 @@
             <a href="/club">🎵 社團經驗</a>
             <p>透過社團活動探索興趣與培養責任感。</p>
         </div>
-       <div class="card">
-           <a href=" /ask">📚 多元選修課程_字典_中翻韓</a>
-           <p>選修跨領域課程，強化專業與探索未來方向。</p>
-       </div>
-        
-       <div class="card">
-           <a href="/ask2">📚 多元選修課程_字典_中翻日</a>
-           <p>選修跨領域課程，強化專業與探索未來方向。</p>
-     </div>
 
         <div class="card">
-            <a href="/stock">📚 多元選修課程_查詢股價</a>
-            <p>輸入股票代號（例如 2330），查詢該股票的相關資訊如前一天的收盤價</p>
+            <a href="/ask">📚 多元選修課程－中韓翻譯</a>
+            <p>透過中韓翻譯字典，學習韓文單字與日常用語。</p>
         </div>
 
         <div class="card">
-            <a href="/ai">🤖 AI應用</a>
+            <a href="/ask">📚 多元選修課程－中日翻譯</a>
+            <p>透過中日翻譯字典，學習日文單字與日常用語。</p>
+        </div>
+
+        <div class="card">
+            <a href="/stock">📈 多元選修課程－股票查詢</a>
+            <p>輸入股票代號，例如 2330，查詢最近一筆交易日的收盤價。</p>
+        </div>
+
+        <div class="card">
+            <a href="/ai">🤖 AI 應用</a>
             <p>結合人工智慧工具，提升學習效率與創作能力。</p>
         </div>
 
@@ -160,9 +162,14 @@
 
     <!-- QR Code -->
     <div class="qrcode-section">
+
         <h2>📱 我的學習歷程 QR Code</h2>
-        <img src="{{ url_for('static', filename='images/qr_code.jpg') }}" alt="學習歷程 QR Code">
+
+        <img src="{{ url_for('static', filename='images/qr_code.jpg') }}"
+             alt="學習歷程 QR Code">
+
         <p>掃描 QR Code 查看我的學習歷程</p>
+
     </div>
 
 </div>
